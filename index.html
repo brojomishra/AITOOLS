@@ -2038,7 +2038,11 @@
 
     <!-- ─── HEADER ─── -->
     <header>
-        <div class="logo"><span>AI</span>TOOLS · NIST</div>
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+            <img src="nlogo.png" alt="NIST Logo"
+                style="height: 36px; width: auto; filter: drop-shadow(0 0 8px rgba(255,255,255,0.2));" />
+            <div class="logo"><span>AI</span>TOOLS · NIST</div>
+        </div>
         <div class="header-right">
             <div class="search-bar">
                 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -2081,6 +2085,24 @@
                 </div>
                 <div class="stat-label" style="color:#34d399;">👥 Visitors</div>
             </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_yIrxpHh-KSj9qqJLJ8DAHLeLU7ZqBRLPrsFK8b7RZB2TzA/viewform"
+                target="_blank" style="text-decoration:none; display:block;" class="stat">
+                <div class="stat-num"
+                    style="min-width:60px; display:flex; align-items:center; justify-content:center; height:36px; margin-bottom: 2px;">
+                    <svg width="24" height="24" fill="none" stroke="url(#feedbackGrad)" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="feedbackGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#a78bfa" />
+                                <stop offset="100%" stop-color="#ff3e78" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                </div>
+                <div class="stat-label" style="color:#a78bfa; transition: color 0.3s;"
+                    onmouseover="this.style.color='#ff3e78'" onmouseout="this.style.color='#a78bfa'">📝 Feedback</div>
+            </a>
         </div>
     </section>
 
